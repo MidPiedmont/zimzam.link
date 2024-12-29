@@ -1,23 +1,27 @@
 ---
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Post from "./posts/post-1.md"
 
 const pageTitle = 'ZimZam';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
+<!-- <Layout pageTitle={pageTitle}> -->
   <body>
-    <Nav />
-    <h1>{pageTitle}</h1>
-    <h2>Deli Slam</h2>
-    <Footer />
+    <div class="div1">
+      <h1>{pageTitle}</h1>
+      <p>Website currently under development :)</p>
+    </div>
+    <Post />
   </body>
-</html>
+<!-- </Layout> -->
+
+<style>
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+  }
+</style>
+

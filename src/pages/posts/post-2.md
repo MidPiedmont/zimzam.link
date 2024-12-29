@@ -1,7 +1,8 @@
 ---
-title: 'My First Blog Post'
+layout: ../../layouts/PostsLayout.astro
+title: 'My Second Blog Post'
 pubDate: 2024-12-22
-description: 'This is the first post on zimzam.link'
+description: 'This is the second post on zimzam.link'
 author: 'Me'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
