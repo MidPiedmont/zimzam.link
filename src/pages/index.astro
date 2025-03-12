@@ -2,19 +2,18 @@
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Post from "./posts/post-1.md"
+import Greeting from '../components/preact/Greeting';
 
 const pageTitle = 'ZimZam';
 ---
 
-<!-- <Layout pageTitle={pageTitle}> -->
+<Layout pageTitle={pageTitle}>
   <body>
     <div class="div1">
-      <h1>{pageTitle}</h1>
-      <p>Website currently under development :)</p>
+      <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
     </div>
-    <Post />
   </body>
-<!-- </Layout> -->
+</Layout>
 
 <style>
   .div1 {
